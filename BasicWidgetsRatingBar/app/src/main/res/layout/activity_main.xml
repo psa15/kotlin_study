@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--
+    android:rating="0" : 기본값은 0
+    android:numStars="6" : 기본값은 5
+    android:stepSize="0.5" : 기본값은 0.5
+
+    크기
+    style="@style/Widget.AppCompat.RatingBar.Indicator"
+    style="@style/Widget.AppCompat.RatingBar.Small"
+    style="@style/Widget.AppCompat.RatingBar"
+    -->
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:numStars="6"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

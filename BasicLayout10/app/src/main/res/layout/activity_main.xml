@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    tools:context=".MainActivity">
+
+    <!--
+    GridLayout : 2차원 격자무늬 형태의 레이아웃, 행과 열의 집합형태로 구성
+     - TableLayout의 단점을 보완,
+     - LinearLayout 또는 FrameLayout의 장점을 포함하는 특징이 있음
+     - 다른 레이아웃과 중첩으로 사용할 필요 X
+
+     주요 속성 :
+        1) android:orientation="horizontal" 혹은 vertical
+            - 근데 속성 안줘도 기본이 horizontal임
+        2) columnCount : 열의 개수를 지정
+        3) rowCount : 행의 개수를 지정
+        4) layout_row : 뷰가 위치하는 세로방향 인덱스,
+        5) layout_column : 뷰가 위치하는 가로방향 인덱스
+
+        cf> orientation : horizontal, columnCount = 3 : 가로방향으로 열의 수를 3개 출력
+            orientation : vertical, rowCount = 3 : 세로방향으로 행의 수를 3개 출력
+
+    -->
+    <Button android:text="A"/>
+    <Button android:text="B"/>
+    <Button android:text="C" android:layout_row="1" android:layout_column="1"/>
+    <Button android:text="D"/>
+    <Button android:text="E"/>
+
+
+</GridLayout>

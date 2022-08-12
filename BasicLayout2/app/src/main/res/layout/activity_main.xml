@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/holo_green_light"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+   <!--
+   android:layout_height="wrap_content"
+    - 자식의 height 만큼만 사용하겠다
+    -->
+
+   <!--
+   위치 : top, bottom. left, right
+   margin : 바깥쪽 여백
+   padding : 안쪽 여백
+   -->
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="30dp"
+       android:layout_marginStart="50dp"
+       android:text="padding and margin" />
+    <!-- marginStart : marginleft와 같은 기능 -->
+
+</LinearLayout>

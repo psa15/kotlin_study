@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    맞춤 정렬하는 align 속성
+    - 기준 뷰에 맞춰져서 배치됨
+    android:layout_alignBottom="@id/testImage" 기준뷰와 아래쪽 맞춤
+    android:layout_alignTop="@id/testImage" 기본값
+    android:layout_alignBaseline="@id/testImage" 텍스트 기준선 맞춤
+    android:layout_alignLeft="@id/testImage" 기준뷰와 왼쪽 맞춤
+    android:layout_alignRight="@id/testImage"   기준 뷰와 오른쪽 맞춤
+    -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/testImage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/testImage"
+        android:layout_alignBottom="@id/testImage"
+
+        android:text="Hello"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <!-- 자동 생성 -->
+    <string name="app_name">BasicResource</string>
+
+    <string name="txt_data1">Hello</string>
+    <string name="txt_data2">World</string>
+</resources>

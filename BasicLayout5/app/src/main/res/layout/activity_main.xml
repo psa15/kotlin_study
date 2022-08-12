@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+     형제뷰들간의 배치속성
+     android:layout_toRightOf="@id/btn1" 오른쪽 배치
+     android:layout_toLeftOf="@id/btn1" 왼쪽 배치
+     android:layout_below="@id/btn1"    아래 배치
+     android:layout_above="@id/btn1"    위 배치
+
+     -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 1"
+        android:id="@+id/btn1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"
+        android:layout_toRightOf="@id/btn1"
+        android:id="@+id/btn2"/>
+
+</RelativeLayout>
