@@ -12,30 +12,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:text="to1"/>
+        android:layout_gravity="center"
+        android:text="to1" />
+
     <TextView
         android:id="@+id/to2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="to2"/>
+        android:layout_marginTop="30dp"
+        android:text="to2" />
 
     <EditText
+        android:id="@+id/editMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="전달할 메시지를 입력하세요"
         android:inputType="textPersonName"
         android:minHeight="48dp" />
+
     <Button
         android:id="@+id/btnClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Close Activity"/>
-
-
+        android:layout_marginTop="30dp"
+        android:text="액티비티 닫기"/>
 
 </LinearLayout>

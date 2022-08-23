@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".AFragment">
+
+    <!--
+    android:background="@color/white"
+     - background배경색이 지정되어 있지 않으면 액티비티 화면이 중첩되어 표시된다.
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="@color/white"
+        android:text="FragmentB" />
+
+</LinearLayout>
